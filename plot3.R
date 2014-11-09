@@ -12,7 +12,7 @@ alldata <- read.table(datafile, header = TRUE, sep =";",na.strings = "?")
 png("plot3.png", width = 480, height = 480)
 smalldata <- alldata[alldata$Date %in% c("1/2/2007","2/2/2007"),]
 
-plot(datetimecol, smalldata[,7], type = "l", ylab = "Energy sub metering")
+plot(datetimecol, smalldata[,7], type = "l", ylab = "Energy sub metering", xlab = "")
 points(datetimecol, smalldata[,8], col = "red", type = "l")
 points(datetimecol, smalldata[,9], col = "blue", type = "l")
 

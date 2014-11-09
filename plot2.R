@@ -18,5 +18,5 @@ datetimecol <- strptime(x, "%d/%m/%Y %H:%M:%S")
 
 plot(datetimecol, smalldata[,3])
 plot(datetimecol, smalldata[,3], type = "l")
-plot(datetimecol, smalldata[,3], type = "l", ylab = "Global Active Power (Kilowatts)")
+plot(datetimecol, smalldata[,3], type = "l", ylab = "Global Active Power (Kilowatts)", xlab = "")
 dev.off()
